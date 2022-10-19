@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 
 	params_t params = PARAMS_INIT;
 
-	a_start(ap, format);
+	va_start(ap, format);
 
 	if (!format || (format[0] == '%' && !format[1]))/* checking for NULL char */
 		return (-1);
